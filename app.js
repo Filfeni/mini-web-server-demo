@@ -1,6 +1,5 @@
 const express = require('express');
 const bp = require("body-parser");
-const { text } = require('express');
 const app = express();
 
 app.use(bp.urlencoded({ extended: true }));
@@ -54,5 +53,5 @@ app.delete("/messages/:msgId", (req, res) => {
 })
 
 app.listen(8080, ()=>{
-    console.log("Server's up")
+    console.log("Server up")
 })
